@@ -1,0 +1,5 @@
+/* Section Styling */
+section {
+    margin-bottom: 50px; /* Adds space between sections */
+    padding-bottom: 20px; /* Adds inner space at the bottom of each section */
+}

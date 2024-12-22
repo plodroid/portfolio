@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Responsive Website</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #555;
+            flex-wrap: wrap; /* Allows wrapping on smaller screens */
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            flex: 1; /* Makes the links flexible */
+            text-align: center;
+        }
+        nav a:hover {
+            background: #444;
+        }
+
+        /* Main Content */
+        main {
+            padding: 20px;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 50px; /* Increased margin for more space between sections */
+            padding: 20px; /* Padding inside the section */
+            background-color: #f0f0f0; /* Light gray background for visibility */
+        }
+
+        /* Home Section */
+        #home {
+            background-color: #ffdddd; /* Light red for Home section */
+        }
+
+        /* About Section */
+        #about {
+            background-color: #ddffdd; /* Light green for About section */
+        }
+
+        /* Videos Section */
+        #videos {
+            background-color: #ddddff; /* Light blue for Videos section */
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #fff0f0; /* Light pink for Contact section */
+        }
+
+        /* Video Section */
+        .video-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .video-container video {
+            max-width: 70%; /* Make video scale with the screen width */
+            height: auto;
+            border: 3px solid #555;
+            border-radius: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Responsive Design with Media Queries */
+        @media (max-width: 768px) {
+            /* Smaller devices like tablets */
+            nav a {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            /* Small devices like phones */
+            header {
+                font-size: 18px;
+                padding: 15px;
+            }
+            nav a {
+                font-size: 12px;
+                padding: 8px;
+            }
+            main {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Here you can find out who I am and what I can do for you</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#videos">Videos</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Hi, I'm Plodroid aka Carl, but you can call me anything :3</p>
+            <p>I'm a very girly pop even though I'm a boy, so just note that...</p>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>I am a skilled scripter, animator, video editor, and more! If you are here, it's probably because you clicked on a link. Who made this website? ME! Who brought me here? Probably me, I don't know anyone else, so I guess it's ME. Anyways, moving on, I have 5 years of experience scripting and video editing, and only 1 year animating (because it's so easy). If you'd like to see more about me or just want to watch a video, go to the video section!</p>
+        </section>
+        <section id="videos">
+            <h2>Videos</h2>
+            <p>Wanna know the "about" section in a video? Then here you go:</p>
+            <div class="video-container">
+                <video controls>
+                    <source src="example-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>⚠️(⚠️WARNING!!! VIDEO IS VERY LOUD ⚠️)⚠️</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>My Discord username is: <strong>__.c.a.r.l.__</strong></p>
+            <p>Feel free to add me!</p>
+        </section>
+    </main>
+</body>
+</html>
